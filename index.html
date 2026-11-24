@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 개인 홈페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 상단 메뉴 -->
+    <header>
+        <h1>MY WEBSITE</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- 메인 화면 -->
+        <section id="home" class="home">
+            <div class="home-text">
+                <h2>안녕하세요!</h2>
+                <p>나의 개인 홈페이지입니다.</p>
+                <button id="aboutButton">자기소개 보기</button>
+            </div>
+
+            <div class="profile">
+                프로필 사진
+            </div>
+        </section>
+
+        <!-- 자기소개 영역 -->
+        <section id="about">
+
+            <h2>ABOUT ME</h2>
+            <p class="section-description">저를 소개합니다.</p>
+
+            <div class="about-container">
+
+                <!-- 기본 정보 -->
+                <div class="about-card">
+                    <h3>기본 정보</h3>
+                    <p>이름 : </p>
+                    <p>생년월일 : </p>
+                    <p>거주 지역 : </p>
+                </div>
+
+                <!-- 학교 및 전공 -->
+                <div class="about-card">
+                    <h3>학교 및 전공</h3>
+                    <p>학교 : </p>
+                    <p>학과 : </p>
+                    <p>학년 : </p>
+                </div>
+
+                <!-- 취미 -->
+                <div class="about-card">
+                    <h3>취미</h3>
+                    <ul>
+                        <li>취미 활동 1</li>
+                        <li>취미 활동 2</li>
+                        <li>취미 활동 3</li>
+                    </ul>
+                </div>
+
+                <!-- 관심 분야 -->
+                <div class="about-card">
+                    <h3>관심 분야</h3>
+                    <ul>
+                        <li>웹 / 앱 개발</li>
+                        <li>게임 개발</li>
+                        <li>인공지능</li>
+                    </ul>
+                </div>
+
+                <!-- 목표 및 가치관 -->
+                <div class="about-card goal-card">
+                    <h3>나의 목표 및 가치관</h3>
+                    <p>
+                        앞으로 이루고 싶은 목표와 
+                        나의 가치관을 작성하는 공간입니다.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 프로젝트 영역 -->
+        <section id="projects">
+
+            <h2>PROJECTS</h2>
+            <p class="section-description">
+                지금까지 진행한 프로젝트
+            </p>
+
+            <!-- 대표 프로젝트 -->
+            <article class="featured-project">
+
+                <div class="featured-image">
+                    대표 프로젝트 이미지
+                </div>
+
+                <div class="featured-info">
+                    <span>FEATURED PROJECT</span>
+                    <h3>대표 프로젝트</h3>
+
+                    <p>대표 프로젝트에 대한 소개입니다.</p>
+                    <p>개발 기간 : </p>
+                    <p>사용 기술 : </p>
+                    <p>담당 역할 : </p>
+                    <p>주요 기능 : </p>
+                </div>
+
+            </article>
+
+            <!-- 전체 프로젝트 -->
+            <!-- 처음에는 화면에 표시하지 않음 -->
+            <div id="allProjects" hidden>
+
+                <h3 class="all-project-title">
+                    ALL PROJECTS
+                </h3>
+
+                <div class="project-container">
+
+                    <article class="project">
+                        <div class="project-image">이미지</div>
+                        <h3>프로젝트 1</h3>
+                        <p>프로젝트 설명</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-image">이미지</div>
+                        <h3>프로젝트 2</h3>
+                        <p>프로젝트 설명</p>
+                    </article>
+
+                    <article class="project">
+                        <div class="project-image">이미지</div>
+                        <h3>프로젝트 3</h3>
+                        <p>프로젝트 설명</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!-- 전체 프로젝트 보기 버튼 -->
+            <div class="button-container">
+                <button id="projectButton"
+                        aria-expanded="false"
+                        aria-controls="allProjects">
+                    전체 프로젝트 보기 ▼
+                </button>
+            </div>
+
+        </section>
+
+        <!-- 연락처 -->
+        <section id="contact">
+
+            <h2>CONTACT</h2>
+
+            <p>Email : </p>
+            <p>GitHub : </p>
+            <p>SNS : </p>
+
+        </section>
+
+    </main>
+
+    <!-- 하단 영역 -->
+    <footer>
+        <p>&copy; 2026 MY WEBSITE</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
